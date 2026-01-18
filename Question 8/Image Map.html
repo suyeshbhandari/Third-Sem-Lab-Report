@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+</head>
+<body>
+
+<h2>Image Map Demo</h2>
+
+<img src="Image/Map.png" usemap="#shapemap" width="600" height="450">
+
+<map name="shapemap">
+
+    <!-- Rectangle -->
+    <area shape="rect"
+          coords="40,60,260,180"
+          href="https://www.facebook.com/"
+          alt="Rectangle">
+
+    <!-- Pentagon -->
+    <area shape="poly"
+          coords="390,70,460,40,530,70,510,160,410,160"
+          href="https://www.instagram.com/"
+          alt="Pentagon">
+
+    <!-- Circle -->
+    <area shape="circle"
+          coords="300,300,70"
+          href="https://web.whatsapp.com/"
+          alt="Circle">
+
+</map>
+
+</body>
+</html>
