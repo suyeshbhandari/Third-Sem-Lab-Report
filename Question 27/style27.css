@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.invoice {
+    width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+.top-bar,
+.bottom-bar {
+    height: 10px;
+    background: #e65c2f;
+    margin: -30px -30px 20px -30px;
+}
+
+.bottom-bar {
+    margin: 20px -30px -30px -30px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background: #777;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.invoice-details {
+    text-align: right;
+}
+
+.invoice-details h1 {
+    margin: 0;
+    color: #555;
+}
+
+/* Billing */
+.billing {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.billing h4 {
+    margin-bottom: 5px;
+}
+
+.terms {
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th {
+    background: #e65c2f;
+    color: white;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+table td {
+    border: 1px solid #ccc;
+    height: 30px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+table td:first-child {
+    text-align: left;
+}
+
+/* Summary */
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.totals {
+    text-align: right;
+}
+
+.totals h3 {
+    background: #f0d6cf;
+    padding: 10px;
+}
+

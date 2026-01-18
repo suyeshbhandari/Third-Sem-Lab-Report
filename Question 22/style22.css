@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+}
+
+/* colors */
+.header { background: #ff9999; }
+.main   { background: white; }
+.left   { background: #f7d46c; }
+.right  { background: #b8f28b; }
+.footer { background: #7ec8f5; }
+
+/* text */
+.container div {
+    text-align: center;
+    padding: 12px;
+}
+
+/* 📱 MOBILE */
+.container {
+    grid-template-rows: auto auto auto auto auto;
+}
+
+/* 📲 TABLET */
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "main   main"
+            "left   right"
+            "footer footer";
+    }
+
+    .header { grid-area: header; }
+    .main   { grid-area: main; }
+    .left   { grid-area: left; }
+    .right  { grid-area: right; }
+    .footer { grid-area: footer; }
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header header"
+            "left   main   right"
+            "footer footer footer";
+    }
+}

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    background: #5b5b8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.middle {
+    display: flex;
+    height: 300px;
+}
+
+.left {
+    background: #b55;
+    width: 20%;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.center {
+    background: #00aaff;
+    width: 60%;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.right {
+    background: #8f85ff;
+    width: 20%;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.footer {
+    background: #888;
+    text-align: center;
+    padding: 15px;
+}

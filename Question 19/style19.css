@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+                no-repeat center center / cover;
+    min-height: 100vh;
+}
+
+/* Main container */
+.container {
+    width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Form wrapper */
+.form-box {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+}
+
+/* Individual forms */
+.register,
+.login {
+    width: 45%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+/* Headings */
+h3 {
+    color: #00c6ff;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Text inputs ONLY */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+}
+
+/* Help text */
+small {
+    font-size: 11px;
+    color: #ccc;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Radio buttons */
+.radio {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.radio label {
+    display: inline-block;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/* Checkbox */
+.check {
+    display: inline-block;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+/* Reset radio & checkbox size */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #d39b1a;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #b8860b;
+}
+
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label:first-of-type {
+  margin-right: 30px; /* increase this number to widen distance */
+}

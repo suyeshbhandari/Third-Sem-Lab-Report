@@ -1,0 +1,17 @@
+.menu {
+    background-color: yellow;
+    padding: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: purple;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+/* hover effect */
+.menu a:hover {
+    background-color: purple;
+    color: white;
+}

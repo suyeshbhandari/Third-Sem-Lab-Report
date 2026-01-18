@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+}
+
+/* Navigation bar */
+.navbar {
+    background-color: #0b3557;
+    padding: 10px;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Hover effect */
+.menu li a:hover {
+    background-color: #06263f;
+}
+
+/* Responsive menu */
+@media screen and (max-width: 768px) {
+
+    .menu {
+        float: none;
+        width: 200px;
+        background-color: #06263f;
+        margin-top: 10px;
+    }
+
+    .menu li {
+        display: block;
+        border-bottom: 1px solid #0b3557;
+    }
+
+    .menu li a {
+        padding: 12px;
+    }
+}

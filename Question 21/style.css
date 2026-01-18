@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Header: logo + heading */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header .logo img {
+    width: 60px; /* adjust size */
+    height: auto;
+    margin-right: 15px;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Gender Options */
+.gender-options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 550px) {
+    .gender-options {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .logo img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
